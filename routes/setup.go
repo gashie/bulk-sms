@@ -9,14 +9,14 @@ import (
 func Setup(app *fiber.App) {
 	app.Get("/api/v1/health", controllers.Health)
 
-	//app routes
+	//group routes
 	GroupRoute(app)
 
-	//category routes
+	//contact routes
 	ContactRoute(app)
 
-	// //appfields routes
-	// AppFieldsRoute(app)
+	 //senderid routes
+	 SenderRoute(app)
 
 	// //invoice data routes
 	// InvoiceDataRoute(app)

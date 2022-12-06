@@ -7,8 +7,8 @@ import (
 )
 
 func GroupRoute(app *fiber.App) {
-
-	//status routes
+	
+    //status routes
 	app.Post("/api/v1/group", settings.CreateGroup)
 	app.Get("/api/v1/group/:id", settings.GetGroup)
 	app.Get("/api/v1/group", settings.AllGroups)

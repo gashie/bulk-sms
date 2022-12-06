@@ -18,5 +18,5 @@ func Connect() {
 
 	DB = database
 	// database.Migrator().DropTable(&models.Group{})
-	database.AutoMigrate(&models.Group{}, &models.Contact{})
+	database.AutoMigrate(&models.Group{}, &models.Contact{},&models.SenderID{})
 }
